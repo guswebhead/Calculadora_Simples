@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+
+<body>
+    <main class="background flex">
+        <header class="header">
+            <h1>Calculadora Simples</h1>
+        </header>
+
+        <section class="calculator flex">
+            <p id="result"></p>
+            <table>
+                <tr>
+                    <td><button class="btn" onclick="clean()">C</button></td>
+                    <td><button class="btn" onclick="backspace()">
+                            < </button>
+                    </td>
+                    <td><button class="btn" onclick="insert('/')"> / </button></td>
+                    <td><button class="btn" onclick="insert('*')"> x </button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert('7')">7</button></td>
+                    <td><button class="btn" onclick="insert('8')"> 8 </button></td>
+                    <td><button class="btn" onclick="insert('9')"> 9 </button></td>
+                    <td><button class="btn" onclick="insert('-')"> - </button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert('4')">4</button></td>
+                    <td><button class="btn" onclick="insert('5')"> 5 </button></td>
+                    <td><button class="btn" onclick="insert('6')"> 6 </button></td>
+                    <td><button class="btn" onclick="insert('+')"> + </button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert('1')">1</button></td>
+                    <td><button class="btn" onclick="insert('2')"> 2 </button></td>
+                    <td><button class="btn" onclick="insert('3')"> 3 </button></td>
+                    <td rowspan="2"><button class="btn" onclick="calc()"> = </button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="btn" onclick="insert('0')" style="width: 106px;">0</button></td>
+                    <td><button class="btn" onclick="insert('.')"> . </button></td>
+                </tr>
+            </table>
+        </section>
+
+        <footer class="footer">
+            <p>Desenvolvido por Gustavo Caixeta</p>
+            <p>2022</p> 
+        </footer>
+    </main>
+
+
+    <!-- <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 18" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 58 18 88 18 v144h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.7)" />
+            <use xlink:href="gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="gentle-wave" x="48" y="5" fill="rgba(255,255,255,0,3)" />
+            <use xlink:href="gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+    </svg> -->
+</body>
+<script src="../script/script.js"></script>
+
+</html>

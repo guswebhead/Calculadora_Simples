@@ -1,0 +1,207 @@
+@import url(reset.css);
+
+/* h1{
+  font-family: 'comic-sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 48px;
+} */
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1{
+  top: 0;
+left: 0;
+right: 0;
+position: fixed;
+}
+
+.background{
+  background-image: linear-gradient(45deg, black, crimson);
+  height: 100vh;
+  color: white;
+  flex-direction: column;
+}
+.background h1{
+  font-size: 35px;
+  font-family: 'comic-sans', sans-serif;
+}
+
+.calculator{
+border-radius: 15px;    
+background-color: rgba(0, 0, 0, 0.8);
+flex-direction: column;
+padding: 15px;
+/* width: 30%;
+height: 50%; */
+}
+
+.calculator h2{
+  font-size: 25px;
+}
+
+.btn{
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  background-color: rgb(31, 31, 31);
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all .5s;
+  margin: 3px;
+}
+
+.btn:hover{
+  background-color: black;
+}
+
+.btn:active{
+  border: 1px solid white;
+}
+
+#result{
+  height: 30px;
+  width: 207px;
+  margin: 5px;
+  background-color: white;
+  font-size: 22px;
+  color: black;
+  text-align: right;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.footer{
+  position: fixed;
+bottom: 0;
+background: #6c6c6c1f;
+color: black;
+width: 100%;
+height: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+  position: relative;
+  text-align: center;
+  background: linear-gradient(98deg, rgba(31,0,36,100) 0%, rgba(255,0,67,100) 100%);
+  color: white;
+}
+
+.inner-header{
+  height: 65vh;
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves{
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content{
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: wheat;
+}
+
+.parallax > use{
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1){
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2){
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3){
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4){
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0%{
+    transform: translate3d(-90px, 0, 0);
+  }
+  100%{
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+
+/* PARA MOBILE */
+@media screen and (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1{
+    font-size: 24px;
+  }
+}
